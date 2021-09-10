@@ -5,7 +5,7 @@ translation_of: Web/API/CSSStyleDeclaration/getPropertyValue
 ---
 <p>{{ APIRef("CSSOM") }}</p>
 
-<p><strong>CSSStyleDeclaration.getPropertyValue()</strong> интерфейс метода, который возвращает {{domxref('DOMString')}}, указанного CSS свойства.</p>
+<p><strong>CSSStyleDeclaration.getPropertyValue()</strong> интерфейс метода, который возвращает {{domxref('DOMString')}}, указанного CSS-свойства.</p>
 
 <h2 id="Синтаксис">Синтаксис</h2>
 
@@ -25,7 +25,7 @@ translation_of: Web/API/CSSStyleDeclaration/getPropertyValue
 
 <h2 id="Пример">Пример</h2>
 
-<p>Следующий JavaScript код проверяет отмечен ли margin как important в CSS правиле селектора:</p>
+<p>Следующий JavaScript-код проверяет отмечен ли margin как important в CSS-правиле селектора:</p>
 
 <pre class="brush: js">var declaration = document.styleSheets[0].rules[0].style;
 var value = declaration.getPropertyValue('margin'); // "1px 2px"
@@ -57,58 +57,4 @@ var value = declaration.getPropertyValue('margin'); // "1px 2px"
 
 <p><strong>Браузерная совместимость</strong></p>
 
-<p>{{CompatibilityTable}}</p>
-
-<div id="compat-desktop">
-<table class="compat-table">
- <thead>
-  <tr>
-   <th scope="col">Feature</th>
-   <th scope="col">Chrome</th>
-   <th scope="col">Edge</th>
-   <th scope="col">Firefox (Gecko)</th>
-   <th scope="col">Internet Explorer</th>
-   <th scope="col">Opera</th>
-   <th scope="col">Safari (WebKit)</th>
-  </tr>
- </thead>
- <tbody>
-  <tr>
-   <td>Базовая поддержка</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-  </tr>
- </tbody>
-</table>
-</div>
-
-<div id="compat-mobile">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Feature</th>
-   <th>Android</th>
-   <th>Edge</th>
-   <th>Firefox Mobile (Gecko)</th>
-   <th>IE Mobile</th>
-   <th>Opera Mobile</th>
-   <th>Safari Mobile</th>
-   <th>Chrome for Android</th>
-  </tr>
-  <tr>
-   <td>Базовая поддержка</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-  </tr>
- </tbody>
-</table>
-</div>
+<p>{{Compat("api.CSSStyleDeclaration.getPropertyValue")}}</p>

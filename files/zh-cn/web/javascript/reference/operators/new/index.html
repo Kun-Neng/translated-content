@@ -39,7 +39,7 @@ translation_of: Web/JavaScript/Reference/Operators/new
 
 <ol>
  <li>创建一个空的简单JavaScript对象（即<code><strong>{}</strong></code>）；</li>
- <li>链接该对象（设置该对象的<font face="consolas, Liberation Mono, courier, monospace"><span style="background-color: rgba(220, 220, 220, 0.5);"><strong>constructor</strong></span></font>）到另一个对象 ；</li>
+ <li>为步骤1新创建的对象添加属性<font face="consolas, Liberation Mono, courier, monospace"><span style="background-color: rgba(220, 220, 220, 0.5);"><strong>__proto__</strong></span></font>，将该属性链接至构造函数的原型对象 ；</li>
  <li>将步骤1新创建的对象作为<code><strong>this</strong></code>的上下文 ；</li>
  <li>如果该函数没有返回对象，则返回<code><strong>this</strong></code>。</li>
 </ol>
@@ -187,8 +187,6 @@ var car2 = new Car("Nissan", "300ZX", 1992, ken);
 </table>
 
 <h2 id="浏览器兼容性">浏览器兼容性</h2>
-
-<div class="hidden">The compatibility table on this page is generated from structured data. If you'd like to contribute to the data, please check out <a href="https://github.com/mdn/browser-compat-data">https://github.com/mdn/browser-compat-data</a> and send us a pull request.</div>
 
 <p>{{Compat("javascript.operators.new")}}</p>
 

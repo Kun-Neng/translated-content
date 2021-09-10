@@ -19,7 +19,7 @@ translation_of: Web/API/XMLHttpRequest
 
 <p><code>XMLHttpRequest</code> это API, который предоставляет клиенту функциональность для обмена данными между клиентом и сервером. Данный API предоставляет простой способ получения данных по ссылке без перезагрузки страницы. Это позволяет обновлять только часть веб-страницы не прерывая пользователя.  <code>XMLHttpRequest используется в AJAX запросах и особенно в single-page приложениях.</code></p>
 
-<p>XMLHttpRequest изначально был разработан Microsoft и позже заимствован Mozilla, Apple, и Google. Сейчас он <a href="https://xhr.spec.whatwg.org/">стандартизирован WHATWG</a>. Несмотря на своё название, <code>XMLHttpRequest</code> может быть использован для получения любых типов данных, не только XML, и поддерживает протоколы помимо <a href="https://developer.mozilla.org/ru/docs/Web/HTTP">HTTP</a> (включая <code>file</code> и <a href="https://developer.mozilla.org/ru/docs/Словарь/FTP">ftp</a>).</p>
+<p>XMLHttpRequest изначально был разработан Microsoft и позже заимствован Mozilla, Apple, и Google. Сейчас он <a href="https://xhr.spec.whatwg.org/">стандартизирован WHATWG</a>. Несмотря на своё название, <code>XMLHttpRequest</code> может быть использован для получения любых типов данных, не только XML, и поддерживает протоколы помимо <a href="https://developer.mozilla.org/ru/docs/Web/HTTP">HTTP</a> (включая <code>file</code> и <a href="https://developer.mozilla.org/ru/docs/Glossary/FTP">ftp</a>).</p>
 
 <p>Чтобы начать работать с <code>XMLHttpRequest</code>, выполните этот код:</p>
 
@@ -385,7 +385,7 @@ translation_of: Web/API/XMLHttpRequest
 
 <h3 id="open()" name="open()">open()</h3>
 
-<p>Инициализирует запрос. Этот метод может (и должен) быть вызван из JavaScript кода; если необходимо вызвать запрос из нативного кода, то нужно использовать метод <a class="internal" href="/en/nsIXMLHttpRequest#openRequest()" title="/en/XMLHttpRequest#openRequest()"><code>openRequest()</code></a>.</p>
+<p>Инициализирует запрос. Этот метод может (и должен) быть вызван из JavaScript-кода; если необходимо вызвать запрос из нативного кода, то нужно использовать метод <a class="internal" href="/en/nsIXMLHttpRequest#openRequest()" title="/en/XMLHttpRequest#openRequest()"><code>openRequest()</code></a>.</p>
 
 <div class="note"><strong>Примечание:</strong> Вызов этого метода из активного запроса (если метод <code>open() или</code> <code>openRequest() уже были вызваны</code>) эквивалентно вызову метода <code>abort()</code>.</div>
 
@@ -595,7 +595,7 @@ if (!XMLHttpRequest.prototype.sendAsBinary) {
  <li>XMLHttpRequest references from W3C and browser vendors:
   <ul>
    <li><a class="external" href="http://www.w3.org/TR/XMLHttpRequest1/">W3C: XMLHttpRequest</a> (base features)</li>
-   <li><a class="external" href="http://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html" title="http://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html">W3C: XMLHttpRequest</a> (latest editor's draft with extensions to the base functionality, formerly XMLHttpRequest Level 2</li>
+   <li><a class="external" href="http://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html">W3C: XMLHttpRequest</a> (latest editor's draft with extensions to the base functionality, formerly XMLHttpRequest Level 2</li>
    <li><a class="external" href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/xmlsdk/html/xmobjxmlhttprequest.asp">Microsoft documentation</a></li>
    <li><a class="external" href="https://developer.apple.com/library/safari/#documentation/AppleApplications/Conceptual/SafariJSProgTopics/Articles/XHR.html">Apple developers' reference</a></li>
   </ul>

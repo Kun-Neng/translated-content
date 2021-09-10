@@ -53,21 +53,21 @@ translation_of: Web/JavaScript/Reference/Global_Objects/String/match
 
 <p>В следующем примере метод <code>match()</code> используется для поиска слова <code>'Глава'</code>, за которым следуют 1 или более цифр, за которыми следуют 0 или более раз группы из точки и цифры. Регулярное выражение включает флаг <code>i</code>, так что регистр букв игнорируется.</p>
 
-<pre class="brush: js">var str = 'Глава 3.4.5.1 содержит дополнительную информацию';
-var re = /(глава \d+(\.\d)*)/i;
+<pre class="brush: js">var str = 'Смотри главу 3.4.5.1 для дополнительной информации';
+var re = /смотри (главу \d+(\.\d)*)/i;
 var found = str.match(re);
 
 console.log(found);
 
-// выведет [ 'Глава 3.4.5.1',
-//           'Глава 3.4.5.1',
+// выведет [ 'Смотри главу 3.4.5.1',
+//           'главу 3.4.5.1',
 //           '.1',
 //           index: 0,
-//           input: 'Глава 3.4.5.1 содержит дополнительную информацию' ]
+//           input: 'Смотри главу 3.4.5.1 для дополнительной информации' ]
 
-// 'Глава 3.4.5.1' - это первое сопоставление и первое значение,
-// сопоставленное с группой `(Глава \d+(\.\d)*)`.
-// '.1' - это последнее значение, сопоставленное с группой `(\.\d)`.
+// 'Смотри главу 3.4.5.1' - это полное сопоставление
+// 'главу 3.4.5.1' - первое значение, сопоставленное с группой "(главу \d+(\.\d)*)".
+// '.1' - это последнее значение, сопоставленное с группой "(\.\d)".
 // Свойство 'index' содержит значение (0) индекса совпадения
 // относительно начала сопоставления
 // Свойство 'input' содержит значение введённой строки.</pre>
@@ -113,61 +113,7 @@ console.log(matches_array);
 
 <h2 id="Browser_compatibility" name="Browser_compatibility">Совместимость с браузерами</h2>
 
-<div>{{CompatibilityTable}}</div>
-
-<div id="compat-desktop">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Возможность</th>
-   <th>Chrome</th>
-   <th>Firefox (Gecko)</th>
-   <th>Internet Explorer</th>
-   <th>Opera</th>
-   <th>Safari</th>
-  </tr>
-  <tr>
-   <td>Базовая поддержка</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-  </tr>
- </tbody>
-</table>
-</div>
-
-<div id="compat-mobile">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Возможность</th>
-   <th>Android</th>
-   <th>Chrome для Android</th>
-   <th>Firefox Mobile (Gecko)</th>
-   <th>IE Mobile</th>
-   <th>Opera Mobile</th>
-   <th>Safari Mobile</th>
-  </tr>
-  <tr>
-   <td>Базовая поддержка</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-   <td>{{CompatVersionUnknown}}</td>
-  </tr>
- </tbody>
-</table>
-</div>
-
-<h3 id="Firefox-specific_notes" name="Firefox-specific_notes">Примечания по Firefox</h3>
-
-<ul>
- <li>Начиная с Gecko 27 {{geckoRelease(27)}}, этот метод был поправлен для соответствия спецификации ECMAScript. При вызове метода <code>match()</code> с глобальным регулярным выражением, свойство {{jsxref("RegExp.lastIndex")}} (если оно определено) будет сбрасываться в <code>0</code> ({{bug(501739)}}).</li>
-</ul>
+<p>{{Compat}}</p>
 
 <h2 id="See_also" name="See_also">Смотрите также</h2>
 

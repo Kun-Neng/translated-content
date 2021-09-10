@@ -44,7 +44,7 @@ translation_of: Web/API/Worker
  <dt>{{domxref("Worker.onmessage")}}</dt>
  <dd>Un {{ domxref("EventListener") }} qui est appelé quand un {{domxref("MessageEvent")}} de type <code>message</code> arrive dans le worker — i.e. quand un message est envoyé au document parent depuis le worker via {{domxref("DedicatedWorkerGlobalScope.postMessage")}}. Le message est stocké dans la propriété {{domxref("MessageEvent.data", "data")}} de l'événement.</dd>
  <dt>{{domxref("Worker.onmessageerror")}}</dt>
- <dd>Un {{domxref("EventHandler")}} qui indique le code à appeler quand un message {{event("messageerror")}} arrive.</dd>
+ <dd>Un {{event("Event_handlers", "event handler")}} qui indique le code à appeler quand un message {{event("messageerror")}} arrive.</dd>
 </dl>
 
 <dl>
@@ -119,7 +119,7 @@ premier<span class="punctuation token">.</span>onchange <span class="operator to
 
 <h3 id="Comportement_des_erreur_Cross-origin_sur_les_worker">Comportement des erreur Cross-origin sur les worker</h3>
 
-<p>Dans les premières versions des spécifications, charger un scripte worker en cross-origin lève une exception <code>SecurityError</code>. Désormais, à la place un évènement {{event("error")}} lancé. Pour en savoir plus, voir <em><a href="https://www.fxsitecompat.com/en-CA/docs/2016/loading-cross-origin-worker-now-fires-error-event-instead-of-throwing-worker-in-sandboxed-iframe-no-longer-allowed/">(en) Loading cross-origin worker now fires error event instead of throwing; worker in sandboxed iframe no longer allowed</a></em>.</p>
+<p>Dans les premières versions des spécifications, charger un scripte worker en cross-origin lève une exception <code>SecurityError</code>. Désormais, à la place un évènement {{event("error")}} lancé.</p>
 </div>
 
 <h2 id="Voir_aussi">Voir aussi</h2>

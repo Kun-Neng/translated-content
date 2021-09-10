@@ -23,7 +23,7 @@ translation_of: Web/API/MediaRecorder/MediaRecorder
  <p>Объект, содержащий следующие свойства:</p>
 
  <ul>
-  <li><code>mimeType</code>:  <code>mime</code> тип, определяет формат результата записи, который нужно использовать в качестве контейнера для создаваемого объекта <code>MediaRecorder</code>. Можно просто указать формат контейнера, а браузер сам выберет нужный кодек для записи аудио/видео, или используйте <a href="https://wiki.developer.mozilla.org/en-US/docs/Web/Media/Formats/codecs_parameter">параметр codecs</a> или параметр<code> profiles</code> для расширения информации об использовании и тонкой конфигурации кодеков. Приложения, предварительно, могут проверять поддержку браузерами определённого типа из свойства <code>mimeType</code> , вызывая метод {{domxref("MediaRecorder.isTypeSupported()")}}.</li>
+  <li><code>mimeType</code>:  <code>mime</code> тип, определяет формат результата записи, который нужно использовать в качестве контейнера для создаваемого объекта <code>MediaRecorder</code>. Можно просто указать формат контейнера, а браузер сам выберет нужный кодек для записи аудио/видео, или используйте <a href="/en-US/docs/Web/Media/Formats/codecs_parameter">параметр codecs</a> или параметр<code> profiles</code> для расширения информации об использовании и тонкой конфигурации кодеков. Приложения, предварительно, могут проверять поддержку браузерами определённого типа из свойства <code>mimeType</code> , вызывая метод {{domxref("MediaRecorder.isTypeSupported()")}}.</li>
   <li><code>audioBitsPerSecond</code>: Скорость записи медиа данных аудио.</li>
   <li><code>videoBitsPerSecond</code>: Скорость записи медиа данных видео.</li>
   <li><code>bitsPerSecond</code>: Скорость записи медиаданных аудио и видео. Может определяться вместо верхних двух. Если определяется вместе с одним из свойств выше, имеет меньший приоритет, и используется  вместо отсутствующей настройки выше..</li>
@@ -83,69 +83,7 @@ if (navigator.mediaDevices.getUserMedia) {
 
 <h2 id="Совместимость_с_браузерами">Совместимость с браузерами</h2>
 
-<p>{{CompatibilityTable}}</p>
-
-<div id="compat-desktop">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Feature</th>
-   <th>Chrome</th>
-   <th>Firefox (Gecko)</th>
-   <th>Internet Explorer</th>
-   <th>Opera</th>
-   <th>Safari (WebKit)</th>
-  </tr>
-  <tr>
-   <td>Basic support</td>
-   <td>{{CompatChrome(47)}}</td>
-   <td>{{CompatGeckoDesktop("25.0")}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-  </tr>
-  <tr>
-   <td>options object</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatGeckoDesktop("43.0")}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-  </tr>
- </tbody>
-</table>
-</div>
-
-<div id="compat-mobile">
-<table class="compat-table">
- <tbody>
-  <tr>
-   <th>Feature</th>
-   <th>Android</th>
-   <th>Android Webview</th>
-   <th>Firefox Mobile (Gecko)</th>
-   <th>Firefox OS</th>
-   <th>IE Phone</th>
-   <th>Opera Mobile</th>
-   <th>Safari Mobile</th>
-   <th>Chrome for Android</th>
-  </tr>
-  <tr>
-   <td>Basic support</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatChrome(47)}}</td>
-   <td>{{CompatGeckoDesktop("25.0")}}</td>
-   <td>1.3<sup>[1]</sup></td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatNo}}</td>
-   <td>{{CompatChrome(47)}}</td>
-  </tr>
- </tbody>
-</table>
-</div>
-
-<p>[1] The initial Firefox OS implementation only supported audio recording.</p>
+<p>{{Compat("api.MediaRecorder.MediaRecorder")}}</p>
 
 <h2 id="Смотрите_также">Смотрите также</h2>
 
